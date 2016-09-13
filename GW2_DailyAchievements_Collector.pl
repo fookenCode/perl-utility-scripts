@@ -49,10 +49,10 @@ my %dailyDetails;
 my @tommIds = ();
 my %tommDetails;
 
-getAchievements($dailyAchievementURL, \@dailyIds, \%dailyDetails);
+findAchievements($dailyAchievementURL, \@dailyIds, \%dailyDetails);
 getAndStoreAchievements($queryURL.join(',', @dailyIds), \%dailyDetails);
 
-getAchievements($dailyTomorrowAchieveURL, \@tommIds, \%tommDetails);
+findAchievements($dailyTomorrowAchieveURL, \@tommIds, \%tommDetails);
 # Adjust date to the correct end date for Tomorrow's achievements
 $dt->add(days => 1); 
 getAndStoreAchievements($queryURL.join(',', @tommIds), \%tommDetails);
