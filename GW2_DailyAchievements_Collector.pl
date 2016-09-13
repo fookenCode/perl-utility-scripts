@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 
-# GW2_DailyAchievement_Collector.pl
+# GW2_DailyAchievements_Collector.pl
 # Author: fookenCode
-# Description: Make calls against the GW2 API framework to gather information about the Daily Achievements.
+# Description: Make calls against the GW2 API framework to gather information about Achievements (currently: Today & Tomorrow's Dailies).
 #                     Then store this information in Relational Database for cached usage to limit call volume to services.
-# Usage: GW2_DailyAchievement_Collector.pl  --debug (optional)
+# Usage: GW2_DailyAchievements_Collector.pl  --debug (optional)
 
 use strict;
 use warnings;
