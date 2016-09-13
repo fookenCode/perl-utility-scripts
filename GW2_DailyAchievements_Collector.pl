@@ -118,7 +118,7 @@ sub getAndStoreAchievements {
 
 
 
-sub getAchievements {
+sub findAchievements {
    my ($url, $dailyIds, $moreDetails) = (@_);
    
    print "[getStoreAchievements]: Initial gathering of Achievements from: ".$url."\n";
