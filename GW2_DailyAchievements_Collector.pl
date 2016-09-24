@@ -90,7 +90,7 @@ sub getAndStoreAchievements {
         }
         $sth->bind_param(9, $pvpFlag);
         $sth->bind_param(10, $dt->epoch());
-        $sth->bind_param(11, $dailyDetails{$achievement->{'id'}}->{'category'});
+        $sth->bind_param(11, $moreDetails->{$achievement->{'id'}}->{'category'});
         $sth->execute();
         
         foreach my $reward (@{$achievement->{'rewards'}}) {
